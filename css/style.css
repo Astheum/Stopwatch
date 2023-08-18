@@ -11,14 +11,21 @@ body {
     background-size: cover;
 }
 
+.inner {
+    width: 80vh;
+    height: 80vh;
+    border-radius: 50%;
+    background-color: black;
+    display: grid;
+    place-content: center;
+}
+
 form {
     display: grid;
     place-content: center;
     padding: 25px;
     text-align: center;
     border-radius: 10px;
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.250);
-    background: rgba(18, 23, 23, 0.544);
     color: white;
     height: 80vh;
     width: 80vw;
@@ -30,7 +37,6 @@ form {
     grid-template-columns:  repeat(7, 70px);
     text-align: center;
     font-weight: bold;
-
 }
 
 span, p {
@@ -40,7 +46,7 @@ span, p {
 button {
     font-weight: bold;
     border: 2px solid rgba(0, 0, 0, 0.600);
-    background: #121717;
+    background: #1f2c2c;
     padding: 5px 10px;
     margin: 5px;
     cursor: pointer;
@@ -56,13 +62,6 @@ button:hover {
 
 
 @media (max-width: 700px) {
-    form {
-        display: grid;
-        width: 300px;
-        height: 80vh;
-        place-content: center;
-    }
-
     .numbers {
         grid-template-columns:  repeat(7, 40px);
     }
