@@ -1,6 +1,7 @@
-body {
-    margin: 0px;
+* {
     padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
 }
 
 .container {
@@ -9,11 +10,12 @@ body {
     place-content: center;
     background: url(../src/vvvortex.svg) center no-repeat;
     background-size: cover;
+    overflow: hidden;
 }
 
 .circle {
-    width: 80vh;
-    height: 80vh;
+    height: 600px;
+    width: 600px;
     border-radius: 50%;
     background-color: rgb(22, 22, 22);
     display: grid;
@@ -25,10 +27,7 @@ form {
     place-content: center;
     padding: 25px;
     text-align: center;
-    border-radius: 10px;
     color: white;
-    height: 80vh;
-    width: 80vw;
 }
 
 .numbers {
@@ -63,15 +62,25 @@ button:hover {
 
 @media (max-width: 700px) {
     .circle {
-        width: 50vh;
-        height: 50vh;
-        border-radius: 50%;
-        background-color: black;
-        display: grid;
-        place-content: center;
+        height: 300px;
+        width: 300px;
+
     }
 
     .numbers {
         grid-template-columns:  repeat(7, 40px);
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-height: 450px) {
+    .circle {
+        height: 300px;
+        width: 300px;
+    }
+
+    .numbers {
+        grid-template-columns:  repeat(7, 40px);
+        font-size: 1.5rem;
     }
 }
