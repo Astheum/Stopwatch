@@ -60,7 +60,6 @@ button:hover {
     background: #5E0854;
 }
 
-
 @media (max-width: 700px) {
     .circle {
         width: 50vh;
